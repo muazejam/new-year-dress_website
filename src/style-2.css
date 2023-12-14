@@ -1,0 +1,534 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../Bg/beautiful-spring-flowers-composition-with-copy-space_23-2148822319.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 1% 3%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav img{
+    width: 170px;
+}
+.nav-list{
+    display: flex;
+    
+    text-align: center;
+
+}
+.nav-list a{
+    color: #111111 ;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 16px;
+    transition: all ,35s ease;
+    display: block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-list li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+.nav-list li a:hover::after{
+    width: 100%;
+
+}
+.header-icons a i{
+margin-right: 15px;
+font-size: 16px;
+color: #111111;
+font-weight: 600;
+}
+.header-icons a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111111;
+}
+.header-icons span{
+    display: none;
+}
+.header-icons  a  i::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+.header-icons  a   i:hover::after{
+    width: 100%;
+
+}
+.home-text{
+    width: 40%;
+    color:#111111;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+}
+.home-text h1{
+    font-size: 39px;
+    animation-delay: 0.5s;
+}
+.home-text p{
+    font-size: 17px;
+    animation-delay: 1s;
+}
+.btn{
+
+    color: #033d06;
+    background: #ecf009;
+    border: 1px solid;
+    padding: 0px 30px;
+    border-radius: 20px 0px;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    background: #f0ecec;
+    transition: 1s;
+}
+.year{
+    text-align: center;
+    width: 40%;
+    color:#111111;
+    position: absolute;
+    top: 65%;
+    left: -1%;
+    
+}
+.year.anime{
+    animation-delay: 2.5s;
+}
+
+.image{
+
+    position: absolute;
+    right:28%;
+    bottom: 123px;
+    animation-delay: 3s;
+}
+.image img{
+ width: 100%;
+ height: 100%;
+}
+.anime{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+
+}
+.h-animate .text{
+    position: relative;
+    color: #111111;
+    font-size: 30px;
+    font-weight: 600;
+}
+.h-animate .text.frist-text{
+    color: #f44336;
+}
+@keyframes animate{
+    40%,60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+    
+}
+
+.v-section{
+    width: 100%;
+    height: 50%;
+    
+    display: flex;
+    background-image: url(../Bg/white-yellow-blooming-flowers_23-2147752457.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+  
+   
+}
+.v-text{
+    
+
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+
+}
+
+.v-text img{
+    width: 300px;
+
+}
+.text-1 h1{
+    padding-left: 120px;
+    padding-top: 5px;
+    color: #f15353;
+    font-size: 50px;
+    text-transform: capitalize;
+    text-shadow: 0.025em 0.025em yellow, 0.025em 0.025em blue, 0.025em 0.025em red, 0.025em 0.025em black;
+    font-weight: 700;
+}
+.text-1 h1:hover{
+    text-shadow: red -3px 0,cyan 3px 0;
+}
+.text-1 p{
+    padding-top: 2px;
+    color: #033d06;
+    text-transform: inherit;
+}
+.v-text .loo{
+    padding-top: 30px;
+    padding-left: 240px;
+}
+.view{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.products{
+    padding-left: 30px;
+    display: flex;
+    box-shadow: 28px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+       
+    width: 400px;
+    height: 450px;
+    justify-content: center;
+    box-sizing: border-box;
+    
+    border-radius: 10px;
+
+}
+.row{
+    
+    justify-content: center;
+    position: relative;
+    transition: all .40s;
+}
+
+.img-pro img{
+    width: 300px;
+    height: auto;
+    transition: all .40s;
+}
+.img-pro img:hover{
+    transform: scale(0.9);
+}
+.heart-icon i{
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    color: #f9fbfc;
+}
+
+.ratting i{
+    color: rgb(9, 99, 9);
+
+}
+
+.price p{
+    margin-right: 5px;
+    font-size: bold;
+}
+.ptext h5{
+        position: absolute;
+        top: 13px;
+        left: 13px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        background-color: #24b737;
+        padding: 3px 5px;
+        border-radius: 10px;
+    
+
+}
+.products-text{
+    position: absolute;
+  
+}
+.products-text p{
+    font-family: sans-serif;
+    font-weight: 200;
+    text-transform:lowercase;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.price a{
+    font-size: 20px;
+    font-weight: 700;
+    color: #033d06;
+    position: absolute;
+    right: 5px;
+}
+.fot{
+    height: 40px;
+    display: flex;
+    background: #f7ad0f;
+    justify-content: center;
+    align-items: center;
+}
+.fot{
+    font-size: 15px;
+    font-weight: 400;
+    color: #033d06;
+}
+
+
+/* featur stye */
+.sec-featur{
+    width: 100vw;
+   
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-image: url(../Bg/wallpaper2you_123593.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+@keyframes animate{
+    40%,60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/* orbit styl */
+.orbit{
+    padding-right: 200px;
+    padding-top: 193px;
+}
+.container{
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+}
+.son{
+    position: absolute;
+    top: 15em;
+    left: 15em;
+    width: 10em;
+    height: 10em;
+    background-color: rgb(255, 238, 0);
+    border-radius: 50%;
+    box-shadow: 0 0 3em white;
+}
+.earth,.moon{
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+
+}
+.earth{
+    top: 5em;
+    left: 5em;
+    width: 30em;
+    height: 30em;
+    animation:orbit 36.5s linear infinite;
+}
+.moon{
+    top: 0;
+    right: 0;
+    width: 8em;
+    height: 8em;
+    animation: orbit 2.7s linear infinite;
+
+}
+.earth::before{
+    content:"" ;
+    position: absolute;
+    border-radius: 50%;
+
+}
+.moon::before{
+    content:"" ;
+    position: absolute;
+    border-radius: 50%;
+
+}
+.earth::before{
+    top: 2.8em;
+    right:2.8em;
+    width: 3em;
+    height: 3em;
+    background-color: aqua;
+}
+.moon::before {
+    top: 0.8em;
+    right: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: rgb(22, 226, 56);
+}
+@keyframes orbit{
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* load style */
+.loader{
+   
+    height: 20px;
+    width: 20px;
+    
+    position: relative;
+}
+.ball{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: blue;
+    border-radius: 50%;
+}
+.upper{
+    left: 0;
+    top: -25px;
+    background: #2da2ff;
+    animation: upper 1s infinite;
+}
+@keyframes upper{
+    50%,100%{
+        top: 25px;
+    }
+}
+.right{
+    bottom: 0;
+    right: -25px;
+    background: #ff337a;
+    animation: right 1s infinite;
+}
+@keyframes right{
+    50%,100%{
+        right: 25px;
+    }
+}
+.lower{
+    bottom: -25px;
+    right: 0;
+    background: #f0a505;
+    animation: lower 1s infinite;
+}
+@keyframes lower{
+    50%,100%{
+        bottom: 25px;
+    }
+}
+.left{
+    left: -25px;
+    right:0 ;
+    background: #00ff00;
+    animation: left 1s infinite;
+}
+@keyframes left{
+    50%,100%{
+        left: 25px;
+    }
+}
+@media(max-width:700px){
+    .home-text{
+        z-index: 2;
+        width: 40%;
+        color:#111111;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+    .home-text h1{
+        font-size: 17px;
+        
+    }
+    .home-text p{
+        font-size: 8px;
+        
+    }
+    .nav-list li a{
+        display: block;
+    }
+    .nav-list{
+        display: block;
+        position: absolute;
+        background: #ecf009;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    .nav-list span fa{
+        display: block
+        
+        
+    }
+    .image img{
+        width: 50%;
+        height: 50%;
+        position: fixed;
+        left:28%;
+        bottom: 123px;
+    }
+    .v-text{
+        display: block;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+    .products{
+        padding-left: 40px;
+        display: block;
+        box-shadow: 28px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+        
+        justify-content: center;
+        box-sizing: border-box;
+        
+        border-radius: 10px;
+    
+    }   
+}
